@@ -8,5 +8,5 @@ import (
 
 func main() {
 	fmt.Println("Hello world!")
-	service.GetAPICryptoRank()
+	service.GetAPIFromCryptoRank()
 }

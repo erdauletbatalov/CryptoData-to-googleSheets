@@ -11,7 +11,7 @@ import (
 
 var Currencies Currency
 
-func GetAPICryptoRank() {
+func GetAPIFromCryptoRank() {
 	currencies := GetRequest("https://api.cryptorank.io/v1/currencies?api_key=ce6f0d432f8a3326d198dcf6d99c0d745aecd0a26ed040450c7ee796b236")
 	err := json.Unmarshal(currencies, &Currencies)
 	if err != nil {
@@ -19,7 +19,10 @@ func GetAPICryptoRank() {
 		os.Exit(1)
 	}
 
-	for _, val := range Currencies.Data {
+	for i, val := range Currencies.Data {
+		if i == 3 {
+			return
+		}
 		fmt.Println(val)
 	}
 }
