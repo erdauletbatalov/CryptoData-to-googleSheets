@@ -3,7 +3,7 @@
 Google Spreadsheet with parsed data (everyone-reedAccess): https://docs.google.com/spreadsheets/d/1mqBbMNEonPIPozZ9EA-kzzon81uXP9MKsmEzim0URHA/edit?usp=sharing
 
 ## Парсинг Cryptorank:  
-Ресурс: ```Cryptorank```  
+Ресурс: [```Cryptorank```](https://cryptorank.io/price/bitcoin)  
 Данные для парсинга: ```Теги нескольких валют (первых трех)```  
 
 Метод парсинга: ```Любой```  
@@ -13,7 +13,7 @@ Google Spreadsheet with parsed data (everyone-reedAccess): https://docs.google.c
 
 
 ## Парсинг CoinGecko  
-Ресурс Coingecko  
+Ресурс [```Coingecko```](https://www.coingecko.com/en)  
 Данные для парсинга: ```Валюты, их стоимость относительно доллара```  
 Метод парсинга: ```Любой```  
 Метод хранения полученных результатов: ```Запись в гугл таблицы(api) по запуску. Количество столбцов: Наименование, Цена, Timestamp. (Должно выводиться за один запрос 65! валют, вместе с ценами).```  
