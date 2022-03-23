@@ -10,6 +10,7 @@ import (
 	"google.golang.org/api/sheets/v4"
 )
 
+// Writes to table with specific id, starting from "from". Only 3 columns are used/
 func FillSpreadsheet(from byte, rows [][]interface{}) {
 	// We use google service account to manipulate app. It is a robot with GRANT EDIT
 	// After we created this account, we can use creds to do stuff

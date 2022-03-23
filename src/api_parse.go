@@ -13,7 +13,7 @@ import (
 var cryptorank CryptoRank
 var coingecko CoinGecko
 
-// Adds names of colomns and fills Spreadsheet with first 3 currenty from CryptoRank
+// Adds names of colomns and fills Spreadsheet with first numberOfRows currency from CryptoRank
 func GetAPIFromCryptoRank(numberOfRows int) [][]interface{} {
 	rows := make([][]interface{}, 0)
 	currencies := GetRequest("https://api.cryptorank.io/v1/currencies?api_key=ce6f0d432f8a3326d198dcf6d99c0d745aecd0a26ed040450c7ee796b236")
@@ -36,6 +36,7 @@ func GetAPIFromCryptoRank(numberOfRows int) [][]interface{} {
 	return rows
 }
 
+// Adds names of colomns and fills Spreadsheet with first numberOfRows currency from CoinGecko
 func GetAPIFromCoinGecko(numberOfRows int) [][]interface{} {
 	rows := make([][]interface{}, 0)
 	currencies := GetRequest("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc")
