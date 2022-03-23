@@ -2,6 +2,9 @@
 
 Google Spreadsheet with parsed data (everyone-reedAccess): https://docs.google.com/spreadsheets/d/1mqBbMNEonPIPozZ9EA-kzzon81uXP9MKsmEzim0URHA/edit?usp=sharing
 
+Just run ```go run main.go``` to fill the table with info  
+You can choose ```how many rows``` you want to Read from each API and ```where to write``` into the table  
+
 ## Парсинг Cryptorank:  
 Ресурс: [```Cryptorank```](https://cryptorank.io/price/bitcoin)  
 Данные для парсинга: ```Теги нескольких валют (первых трех)```  
