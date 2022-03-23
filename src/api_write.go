@@ -1,6 +1,7 @@
 package service
 
 import (
+	"fmt"
 	"io/ioutil"
 	"log"
 
@@ -9,7 +10,7 @@ import (
 	"google.golang.org/api/sheets/v4"
 )
 
-func FillSpreadsheet(rows [][]interface{}) {
+func FillSpreadsheet(from byte, rows [][]interface{}) {
 	// We use google service account to manipulate app. It is a robot with GRANT EDIT
 	// After we created this account, we can use creds to do stuff
 	b, err := ioutil.ReadFile("./src/credentials.json")
@@ -32,7 +33,7 @@ func FillSpreadsheet(rows [][]interface{}) {
 	}
 
 	// From [0][0] to [2][2]
-	rangeData := "A1:E4"
+	rangeData := fmt.Sprintf("%c1:%c%d", from, from+2, len(rows))
 	rb := &sheets.BatchUpdateValuesRequest{
 		ValueInputOption: "USER_ENTERED",
 	}

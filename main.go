@@ -5,6 +5,6 @@ import (
 )
 
 func main() {
-	service.FillSpreadsheet(service.GetAPIFromCryptoRank())
-
+	service.FillSpreadsheet('A', service.GetAPIFromCryptoRank(3))
+	service.FillSpreadsheet('E', service.GetAPIFromCoinGecko(65))
 }
