@@ -1,4 +1,4 @@
-# Тестовые задания:
+# This is job interview task
 
 Google Spreadsheet with parsed data (everyone-reedAccess): https://docs.google.com/spreadsheets/d/1mqBbMNEonPIPozZ9EA-kzzon81uXP9MKsmEzim0URHA/edit?usp=sharing
 
